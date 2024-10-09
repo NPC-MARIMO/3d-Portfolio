@@ -25,7 +25,6 @@ section.follow-me .container{
     width: 50%;
 }
 section.follow-me .container .item{
-    cursor: pointer;
     gap: .5rem;
     align-items: center;
     justify-content: center;

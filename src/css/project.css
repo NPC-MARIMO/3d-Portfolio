@@ -10,7 +10,6 @@ section.project{
 }
 section.project .arrow-container{
     z-index: 99;
-    cursor: pointer;
     position: absolute;
     border-radius: 50%;
     width: 250px;

@@ -1,7 +1,8 @@
 nav{
-    padding: 30px;
+    height: 100px;
+    padding: 0 30px ;
     top: 0;
-    z-index: 9999;
+    z-index: 999;
     display: flex;
     backdrop-filter: blur(10px);
     width: 100%;
@@ -16,7 +17,6 @@ nav .menu{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    cursor: pointer;
 }
 nav .menu .line{
     width: 100%;

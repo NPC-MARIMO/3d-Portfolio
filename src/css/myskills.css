@@ -24,7 +24,6 @@ section.skills .container{
     width: 70%;
 }
 section.skills .container .item{
-    cursor: pointer;
     gap: .5rem;
     align-items: center;
     justify-content: center;
