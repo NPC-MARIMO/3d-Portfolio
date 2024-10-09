@@ -1,0 +1,80 @@
+section.project{
+    padding: 30px;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    
+}
+section.project .arrow-container{
+    z-index: 99;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #fff  ;
+}
+section.project .arrow-container .left-arrow{
+    transform: translate(75px , -125px);
+    rotate: 180deg;
+}
+section.project .arrow-container .right-arrow{
+    transform: translate(75px , 125px);
+}
+section.project .arrow-container:nth-child(1){
+    left: 0;
+    transform: translateX(-40px);
+}
+section.project .arrow-container:nth-child(2){
+    right: 0;
+    transform: translateX(40px);
+}
+section.project .arrow-container .arrow-lines{
+    height: 1px;
+    background-color: #fff;
+}
+section.project .arrow-container .side-line{
+    width: 30px;
+}
+section.project .arrow-container .up-line{
+    rotate: 45deg;
+    transform: translateY(16px);
+    
+}
+section.project .arrow-container .down-line{
+    transform: translateY(-16px);
+    rotate: -45deg;
+}
+section.project .arrow-container .center-line{
+    width: 70px;
+}
+section.project .projects-container{
+    left: 0;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    transform: translateX();
+}
+section.project .projects-container .project{
+    transform: translateX(100%);
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: #dadada;
+}
+section.project .projects-container h1{
+    position: absolute;
+    font-family: monospace;
+    transform: translateY(-250%);
+    left: 6%;
+    color: #dadada;
+    font-size: 100px;
+    text-shadow: 0 0 10px rgba(218, 218, 218, 0.7);
+    text-align: center;
+}

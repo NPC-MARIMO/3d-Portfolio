@@ -1,0 +1,44 @@
+section.skills{
+    width: 100%;
+    padding: 20vh 30px;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.skills h1{
+    font-family: monospace;
+    color: #dadada;
+    font-size: 80px;
+    text-shadow: 0 0 10px rgba(218, 218, 218, 0.7);
+    text-align: center;
+}
+section.skills .container{
+    gap: 2rem;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+section.skills .container .item{
+    cursor: pointer;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    background-color: #919191;
+    color: #fff;
+    font-family: syne;
+}
+section.skills .container .item .img{
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+}

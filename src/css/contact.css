@@ -1,0 +1,72 @@
+section.contact{
+    width: 100%;
+    padding:0 30px;
+    margin-top: 10vh;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+section.contact .right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+section.contact .right .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: montserrat;
+
+}
+section.contact .right .images{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+section.contact .right .images .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #919191;
+}
+
+section.contact .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section.contact .left .image{
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+section.contact .left .image .bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+section.contact .left .image .bg::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background-color: #4eaaec;
+    border-radius: 50%;
+    filter: blur(140px);
+}

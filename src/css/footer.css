@@ -1,0 +1,77 @@
+footer{
+    width: 100%;
+    position: relative;
+    height: 170px;
+}
+footer h1{
+    font-size: 12rem;
+    color: #dadada;
+    font-family: syne;
+    text-align: center;
+    position: absolute;
+    font-weight: 500;
+    left:15%;
+    text-shadow: 
+        0 0 15px #fff,
+        0 0 75px #dadada
+    ;
+}
+footer .footer{
+    opacity: 0.97;
+    transform: translateY(69%);
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 99;
+    font-family: montserrat;
+    height: 70%;
+    background-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer .left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    gap: 10rem;
+    /* align-items: center; */
+    margin-top: 75px;
+    justify-content: center;
+}
+footer .footer .left .one , footer .footer .left .two{
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer .footer .left .social-media{
+    display: flex;
+    gap: 1rem;
+}
+footer .footer .left .social-media .img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+footer .footer .right{
+    margin-left: 10vh;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 75px;
+    width: 30%;
+    height: 100%;
+}
+footer .footer .right .contact{
+    display: flex;
+    gap: 1rem;
+}
+footer .footer .right .contact .img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
