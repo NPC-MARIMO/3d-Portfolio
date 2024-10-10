@@ -1,5 +1,4 @@
 section.about{
-    margin-top: 20vh;
     height: calc(100vh - 100px);
     padding: 50px;
     width: 100%;
@@ -55,6 +54,13 @@ section.about .right .text{
     height: 100%;
 }
 section.about .right .text p{
+
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     letter-spacing: -1px;
     font-size: 1.5rem;
     text-align: center; 
@@ -62,10 +68,14 @@ section.about .right .text p{
     color: #fff;
     font-weight: 400;
 }
+section.about .right .text p span{
+    display: inline-block;
+    padding-left: 0.5rem;
+}
 section.about .right .text h1{
     margin-bottom: 5vh;
     font-family: monospace;
-    font-size: 60px;
+    font-size: 100px;
     color: #dadada;
     text-shadow: 0 0 10px rgba(218, 218, 218, 0.7);
 }

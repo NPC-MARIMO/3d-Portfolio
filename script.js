@@ -42,5 +42,5 @@ document.addEventListener('click' , () => {
         scale : 1,
         delay : 0.15
     })
-    
+
 })
