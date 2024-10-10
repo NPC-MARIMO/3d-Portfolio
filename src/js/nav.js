@@ -14,7 +14,7 @@ let menuClickAnimation = () => {
 
     // animation on clicking on menu
     const initClickAnimation = () => {
-        if (active) {
+        if (!active) {
             gsap.to('.line:nth-child(1)', {
                 duration: 0.3,
                 rotate: 45,

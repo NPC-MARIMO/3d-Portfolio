@@ -16,20 +16,18 @@ section.project .arrow-container{
     height: 250px;
     border: 1px solid #fff  ;
 }
-section.project .arrow-container .left-arrow{
+section.project .arrow-container .right-arrow{
     transform: translate(75px , -125px);
     rotate: 180deg;
 }
-section.project .arrow-container .right-arrow{
+section.project .arrow-container .left-arrow{
     transform: translate(75px , 125px);
 }
 section.project .arrow-container:nth-child(1){
-    left: 0;
-    transform: translateX(-40px);
+    right: 0;
 }
 section.project .arrow-container:nth-child(2){
-    right: 0;
-    transform: translateX(40px);
+    left: 0;
 }
 section.project .arrow-container .arrow-lines{
     height: 1px;
@@ -61,7 +59,7 @@ section.project .projects-container{
     transform: translateX();
 }
 section.project .projects-container .project{
-    transform: translateX(100%);
+    transform: translateX(130%);
     border-radius: 20px;
     width: 500px;
     height: 400px;
@@ -76,4 +74,12 @@ section.project .projects-container h1{
     font-size: 100px;
     text-shadow: 0 0 10px rgba(218, 218, 218, 0.7);
     text-align: center;
+}
+section.project .projects-container h1 .project-h1-word-span{
+    padding-right: 4rem;
+    display: inline-block;
+    overflow: hidden;
+}
+section.project .projects-container h1 .project-h1-word-span .project-h1-letter-span{
+    display: inline-block;
 }

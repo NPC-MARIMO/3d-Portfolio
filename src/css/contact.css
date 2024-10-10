@@ -3,7 +3,7 @@ section.contact{
     padding:0 30px;
     margin-top: 10vh;
     display: flex;
-    height: 60vh;
+    height: 50vh;
     align-items: center;
     justify-content: center;
 }
@@ -20,11 +20,18 @@ section.contact .right .container{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.9rem;
     font-size: 1.5rem;
     color: #fff;
     font-family: montserrat;
 
+}
+section.contact .right .container .item .outer{
+    display: inline-block;
+    overflow: hidden;
+}
+section.contact .right .container .item .outer .contact-right-item-span{
+    display: inline-block;
 }
 section.contact .right .images{
     display: flex;

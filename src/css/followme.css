@@ -15,6 +15,13 @@ section.follow-me h1{
     text-shadow: 0 0 10px rgba(218, 218, 218, 0.7);
     text-align: center;
 }
+section.follow-me h1 .follow-me-h1-word-span{
+    padding-right: 0.9rem;
+    overflow: hidden;
+}
+section.follow-me h1 .follow-me-h1-word-span .follow-me-h1-letter-span{
+    display: inline-block;
+}
 section.follow-me .container{
     gap: 2.5rem;
     margin-top: 10vh;
@@ -39,6 +46,5 @@ section.follow-me .container .item{
 section.follow-me .container .item .img{
     background-color: rebeccapurple;
     border-radius: 50%;
-    width: 0;
-    height: 0;
+    scale: 0;
 }
