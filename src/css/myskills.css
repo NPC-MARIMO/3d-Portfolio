@@ -45,5 +45,5 @@ section.skills .container .item{
 section.skills .container .item .img{
     background-color: rebeccapurple;
     border-radius: 50%;
-    scale : 0;
+    display: flex;
 }

@@ -41,8 +41,6 @@ section.contact .right .images{
     gap: 1rem;
 }
 section.contact .right .images .img{
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     background-color: #919191;
 }

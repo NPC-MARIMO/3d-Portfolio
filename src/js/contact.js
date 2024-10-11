@@ -18,11 +18,12 @@ let contactOpeningAnimation = () => {
         scale : 0,
         opacity : 0,
         duration : 1,
-    }).from('.contact .right .images .img' , {
-        scale : 0,
-        opacity : 0,
+    }).to('.contact .right .images .img , .contact .right .images .img img' , {
+        height : 50,
+        width : 50,
+        opacity : 1,
         duration : 1,
-        stagger :1  
+        stagger :.3
     },'a').from('.contact .right .container .item .outer .contact-right-item-span' , {
         x :- 50,
         duration : 1,

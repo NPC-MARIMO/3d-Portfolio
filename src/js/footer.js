@@ -23,10 +23,11 @@ let footerOpeningAnimation = () => {
         x: -30,
         duration : .4,
         stagger : 0.02
-    },'a').from('footer .footer .right .contact .img' , {
-        scale : 0 , 
-        stagger : .5,
-        duartion : .5
+    },'a').to('footer .footer .img , footer .footer .img img' , {
+        height : 30,
+        width : 30,
+        stagger : .1,
+        duration : .5
     },'a')
 }
 

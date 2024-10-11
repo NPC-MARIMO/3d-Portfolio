@@ -38,16 +38,14 @@ let followMeContainerHoverOutAnimation = () => {
     let followMeContainer = document.querySelectorAll('.follow-me .item')
     followMeContainer.forEach((item) => {
         item.addEventListener('mouseenter' , () => {
-            gsap.to(item.querySelector('.img') , {
-                scale : 1,
+            gsap.to(item.querySelector('.follow-me .img, .follow-me .img img') , {
                 duration : 0.2,
                 width : 30,
                 height : 30,
             })
         })
         item.addEventListener('mouseleave' , () => {
-            gsap.to(item.querySelector('.img') , {
-                scale : 0,
+            gsap.to(item.querySelector('.follow-me .img, .follow-me .img img') , {
                 duration : 0.2,
                 width : 0,
                 height : 0,
