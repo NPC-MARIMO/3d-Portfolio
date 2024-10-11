@@ -3,7 +3,12 @@ footer{
     position: relative;
     height: 170px;
 }
+
 footer h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
     font-size: 12rem;
     color: #dadada;
     font-family: syne;
@@ -16,9 +21,12 @@ footer h1{
         0 0 75px #dadada
     ;
 }
+footer h1 .footer-h1-letter-span{
+    display: inline-block;
+}
 footer .footer{
     opacity: 0.97;
-    transform: translateY(69%);
+    transform: translateY(39%);
     bottom: 0;
     width: 100%;
     position: absolute;
@@ -74,4 +82,11 @@ footer .footer .right .contact .img{
     width: 30px;
     border-radius: 50%;
     background-color: #fff;
+}
+.footer p .footer-p-letter-span{
+    display: inline-block;
+}
+.footer p .outer{
+    overflow: hidden;
+    display: inline-block;
 }

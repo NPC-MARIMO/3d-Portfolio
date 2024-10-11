@@ -26,7 +26,7 @@ let contactOpeningAnimation = () => {
     },'a').from('.contact .right .container .item .outer .contact-right-item-span' , {
         x :- 50,
         duration : 1,
-        stagger : 0.05
+        stagger : 0.03
     },'a')
 }
 
