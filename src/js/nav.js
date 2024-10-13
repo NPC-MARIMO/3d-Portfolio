@@ -5,6 +5,8 @@ import {navPageOpeningAnimation , navPageClosingAnimation} from './navpage'
 let menu = document.querySelector(".menu")
 
 let menuClickAnimation = () => {
+
+    
     // intialising active
     let active = false;
 

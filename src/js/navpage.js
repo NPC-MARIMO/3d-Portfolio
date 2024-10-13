@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {allTextToLetterNoSpaceEvenOddSpanSplitter , allTextToWordSpanSplitter } from '../function'
-import { menuClickAnimation } from "./nav";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,7 +34,20 @@ let navLines = document.querySelectorAll('section.navpage .line')
 navLinks.forEach((link , i) => {
     link.addEventListener('click' , () => {
         navPageClosingAnimation()
-        menuClickAnimation()
+        gsap.to('nav .line:nth-child(2)', {
+            duration: 0.3,
+            height: 1,
+            y: 0,
+            rotate: 0,
+            ease: "power2.inOut",
+        })
+        gsap.to('nav .line:nth-child(1)', {
+            duration: 0.3,
+            y: 0,
+            height: 1,
+            rotate: 0,
+            ease: "power2.inOut",
+        })
     })
 
     link.addEventListener('mouseenter' , () => {
