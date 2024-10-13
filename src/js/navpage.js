@@ -48,6 +48,15 @@ navLinks.forEach((link , i) => {
             rotate: 0,
             ease: "power2.inOut",
         })
+        gsap.to('nav h1',{
+            fontSize : '2.5rem',
+            y : 0
+        })
+
+        gsap.to('nav .logo',{
+            height : '3rem'
+        })
+
     })
 
     link.addEventListener('mouseenter' , () => {
