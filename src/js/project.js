@@ -16,7 +16,10 @@ let projectOpeningAnimation = () => {
         end : 'top 20%',
         scrub : true
     }});
-
+    tl.to('nav h1',{
+        y : '-500%',
+        duration :1
+    })
     tl.from('.project .project-h1 .project-h1-letter-span' , {
         opacity : 0,
         x : -50,
@@ -127,6 +130,8 @@ let projectClosingAnimation = () => {
         scale : 0,
         duration : 1,
         ease : 'back.inOut',
+    }).to('nav h1' , {
+        y : "-600%"
     })
 }
 projectClosingAnimation()

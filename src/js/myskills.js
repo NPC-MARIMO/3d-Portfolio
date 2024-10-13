@@ -14,6 +14,10 @@ let mySkillsOpeningAnimation = () => {
         end: 'bottom 40%',
         scrub: true
     }});
+    tl.to('nav h1',{
+        y : '-200%',
+        duration :1
+    })
     tl.from('.skills h1 .skills-h1-letter-span' , {
         opacity: 0,
         x: -50,

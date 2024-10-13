@@ -16,7 +16,10 @@ let aboutOpeningAnimation = () => {
         end : 'top 20%',
         scrub : 1,
     }});
-
+    tl.to('nav h1',{
+        y : '-100%',
+        duration :1
+    })
     tl.from('.about .about-h1-span' , {
         opacity : 0,
         stagger : 0.03,

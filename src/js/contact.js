@@ -13,7 +13,10 @@ let contactOpeningAnimation = () => {
         end : 'bottom 90%',
         scrub : true
     }});
-
+    tl.to('nav h1',{
+        y : '-300%',
+        duration :1
+    })
     tl.from('.contact .left .image' , {
         scale : 0,
         opacity : 0,
