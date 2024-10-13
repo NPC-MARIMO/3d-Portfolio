@@ -29,7 +29,7 @@ section.follow-me .container{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
 }
 section.follow-me .container .item{
     gap: 1rem;
