@@ -16,26 +16,24 @@ html , body{
 
 /* Custom cursor styles */
 .cursor {
-    z-index: 9999;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #cc3bb6;
     position: fixed;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 999999;
     transition: transform 0.1s ease;
 }
 
 .cursor-shadow {
-    z-index: 9999;
+    z-index:999998 ;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: rgba(204, 59, 182, 0.3);
     position: fixed;
     pointer-events: none;
-    z-index: 9998;
     transition: transform 0.15s ease;
 }
 

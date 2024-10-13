@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
 
+  <!-- fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  </style>
+
   <!-- stylesheets -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./src/css/nav.css">
@@ -30,6 +35,50 @@
 
     <!-- navpage -->
     <section class="navpage">
+      <div class="container">
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-items">
+          <div class="link">
+            <a href="#home"><h1 class="pointer" >
+              home page
+            </h1></a>
+          </div>
+          <div class="link">
+            <a href="#about"><h1 class="pointer" >
+              about me
+            </h1></a>
+          </div>
+          <div class="link">
+            <a href="#skills"><h1 class="pointer" >
+              my current Skills
+            </h1></a>
+          </div>
+          <div class="link">
+            <a href="#contact"><h1 class="pointer" >
+              contact me
+            </h1></a>
+          </div>
+          <div class="link">
+            <a href="#follow"><h1 class="pointer" >
+              follow me
+            </h1></a>
+          </div>
+          <div class="link">
+            <a href="#project"><h1 class="pointer" >
+              my projects
+            </h1></a>
+          </div>          
+        </div>
+      </div>
+      
+
     </section>
 
     <!-- nav -->
@@ -49,7 +98,7 @@
     </nav>
 
     <!-- home -->
-    <section class="home">
+    <section class="home" id="home">
 
       <div class="left">
         <h1> Hi, I'm Shivang </h1>
@@ -67,7 +116,7 @@
     </section>
 
     <!-- about -->
-    <section class="about">
+    <section id="about" class="about">
 
       <div class="left">
         <div class="image">
@@ -91,7 +140,7 @@
     </section>
 
     <!-- MySkills -->
-    <section class="skills">
+    <section id="skills" class="skills">
 
       <h1>My Current Skills</h1>
 
@@ -152,11 +201,27 @@
             <p>Learning ThreeJs</p>
           </div>
         </a>
+        <a target="_blank" href=""></a>
+          <div class="item pointer">
+            <div class="img">
+              <img src="./images/nextjs.jpeg" alt="">
+            </div>
+            <p>Learning NextJs</p>
+          </div>
+        </a>
+        <a target="_blank" href=""></a>
+          <div class="item pointer">
+            <div class="img">
+              <img src="./images/typescript.png" alt="">
+            </div>
+            <p>Learning TypeScript</p>
+          </div>
+        </a>
 
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
 
       <div class="left">
         <div class="image">
@@ -213,7 +278,7 @@
     </section>
 
     <!-- FollowMeOn -->
-    <section class="follow-me">
+    <section id="follow" class="follow-me">
 
       <h1>Follow Me On</h1>
 
@@ -263,7 +328,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="project">
+    <section id="project" class="project">
 
 
       <div class="arrow-container pointer rightArrow">
@@ -284,73 +349,93 @@
       <div class="projects-container">
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/nside.png" alt="">
+          </div>
+          <h2>NSIDE.</h2>
+          <p>Incomplete clone of website I found on Webflow .</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/gym.png" alt="">
+          </div>
+          <h2>Awwwarded Gym</h2>
+          <p>Incomplete clone of website from awwwards.com .</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/lazarev.png" alt="">
+          </div>
+          <h2>Lacarev</h2>
+          <p>Incomplete clone of website from awwwards.com .</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/jomor.png" alt="">
+          </div>
+          <h2>Jomor</h2>
+          <p>Incomplete clone of website I found on Webflow .</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/revenent.png" alt="">
+          </div>
+          <h2>Revenent</h2>
+          <p>Incomplete clone of website I found on awwwards.com .</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/cyber.png" alt="">
+          </div>
+          <h2>Cyber</h2>
+          <p>A Complete website from awwwards.com .</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/bugatti.png" alt="">
+          </div>
+          <h2>Bugatti</h2>
+          <p>Bugatti website I tried to Re-Design.</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/brainwave.png" alt="">
+          </div>
+          <h2>Brainwave</h2>
+          <p>A website I build while learning ReactJs.</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/iphone.png" alt="">
+          </div>
+          <h2>I-phone</h2>
+          <p>A website I build while learning ReactJs.</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <div class="project">
-          <div class="img"></div>
-          <h1></h1>
-          <p></p>
-          <div class="button pointer"></div>
+          <div class="img">
+            <img src="./public/project-images/3d-Slider.png" alt="">
+          </div>
+          <h2>3D - Slider </h2>
+          <p>A 3d image slider using only HTML and CSS.</p>
+          <div class="button pointer">Check Out</div>
         </div>
 
         <h1 class="project-h1">Projects Preview</h1>

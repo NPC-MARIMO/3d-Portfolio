@@ -2,7 +2,7 @@ nav{
     height: 100px;
     padding: 30px 30px 0 30px;
     top: 0;
-    z-index: 999;
+    z-index: 99999;
     display: flex;
     backdrop-filter: blur(10px);
     width: 100%;

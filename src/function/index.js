@@ -44,7 +44,21 @@ let spaceSpanSplitter = (text , el) => {
     })
 }
 
-
+let noSpaceEvenOddSpanSplitter = (text) => {
+    let textWords = text.textContent.split('')
+    let clutter = '';
+    textWords.forEach((letter , i) => {
+        if(i%2==0){
+            clutter+= `<span class='even'>${letter}</span>`
+           
+        }
+        else{
+            clutter+= `<span class='odd'>${letter}</span>`
+            
+        }
+        text.innerHTML = clutter
+    })
+}
 
 //1
 const textToLetterSpanSplitter = (location , el) => {
@@ -117,3 +131,13 @@ let allTextToWordSpanSpanSplitter = (location , el) => {
 }
 
 export {allTextToWordSpanSpanSplitter}
+
+// 9 
+let allTextToLetterNoSpaceEvenOddSpanSplitter = (location) => {
+    let texts = document.querySelectorAll(`${location}`);
+    texts.forEach((t) => {
+        noSpaceEvenOddSpanSplitter(t)
+    })
+}
+
+export {allTextToLetterNoSpaceEvenOddSpanSplitter}

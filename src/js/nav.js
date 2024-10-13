@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { allTextToletterSpanSplitter } from "../function";
+import {navPageOpeningAnimation , navPageClosingAnimation} from './navpage'
 
 let menu = document.querySelector(".menu")
 
@@ -15,14 +16,14 @@ let menuClickAnimation = () => {
     // animation on clicking on menu
     const initClickAnimation = () => {
         if (!active) {
-            gsap.to('.line:nth-child(1)', {
+            gsap.to('nav .line:nth-child(1)', {
                 duration: 0.3,
                 rotate: 45,
                 ease: "power2.inOut",
                 y: 7,
                 height: 2,
             })
-            gsap.to('.line:nth-child(2)', {
+            gsap.to('nav .line:nth-child(2)', {
                 width: "100%",
                 height: 2,
                 duration: 0.3,
@@ -30,23 +31,25 @@ let menuClickAnimation = () => {
                 y: -7,
                 ease: "power2.inOut",
             })
+            navPageOpeningAnimation()
+
 
         } else {
-            gsap.to('.line:nth-child(2)', {
+            gsap.to('nav .line:nth-child(2)', {
                 duration: 0.3,
                 height: 1,
                 y: 0,
                 rotate: 0,
                 ease: "power2.inOut",
             })
-            gsap.to('.line:nth-child(1)', {
+            gsap.to('nav .line:nth-child(1)', {
                 duration: 0.3,
                 y: 0,
                 height: 1,
                 rotate: 0,
                 ease: "power2.inOut",
             })
-
+            navPageClosingAnimation()
         }
     }
 
@@ -55,6 +58,7 @@ let menuClickAnimation = () => {
     menu.addEventListener("click", () => {
         initClickAnimation();
         activeHandler()
+
     })
 }
 
@@ -63,7 +67,7 @@ menuClickAnimation()
 let mouseEnterLeaveAnimation = () => {
     // evenetlistener mouseenter to perform animation
     menu.addEventListener('mouseenter', () => {
-        gsap.to('.line:nth-child(2)', {
+        gsap.to('nav .line:nth-child(2)', {
             width: "100%",
             duration: 0.3,
             ease: "power2.inOut",
@@ -72,7 +76,7 @@ let mouseEnterLeaveAnimation = () => {
 
     // event listener mouseleave to perform animaiton
     menu.addEventListener('mouseleave', () => {
-        gsap.to('.line:nth-child(2)', {
+        gsap.to('nav .line:nth-child(2)', {
             width: "80%",
             duration: 0.3,
             ease: "power2.inOut",
@@ -106,3 +110,4 @@ let navOpeningAnimation = () => {
 }
 
 navOpeningAnimation()
+export {menuClickAnimation}
