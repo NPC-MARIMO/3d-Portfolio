@@ -31,10 +31,41 @@ let navPageOpeningAnimation = () => {
 }
 
 let navLinks = document.querySelectorAll('section.navpage h1')
-navLinks.forEach((link) => {
+let navLines = document.querySelectorAll('section.navpage .line')
+navLinks.forEach((link , i) => {
     link.addEventListener('click' , () => {
         navPageClosingAnimation()
         menuClickAnimation()
+    })
+
+    link.addEventListener('mouseenter' , () => {
+        let tl = gsap.timeline()
+        tl.to(link,{
+            duration : .3,
+            opacity : 0,
+            ease : 'power1.inOut'
+        },'a').set(link , {
+            fontStyle : "italic",
+        }).to(link,{
+            opacity : 1
+        }).to(navLines[i] , {
+            width : '80%',
+        },'a')
+    })
+
+    link.addEventListener('mouseleave' , () => {
+        let tl = gsap.timeline()
+        tl.to(link,{
+            duration : .3,
+            opacity : 0,
+            ease : 'power1.inOut'
+        },'a').set(link , {
+            fontStyle : "normal",
+        }).to(link,{
+            opacity : 1
+        }).to(navLines[i] , {
+            width : '40%',
+        },'a')
     })
 })
 

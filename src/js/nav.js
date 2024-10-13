@@ -31,6 +31,15 @@ let menuClickAnimation = () => {
                 y: -7,
                 ease: "power2.inOut",
             })
+            gsap.to('nav h1',{
+                y : -25,
+                fontSize : '7rem'
+            })
+
+            gsap.to('nav .logo',{
+                height : '7rem'
+            })
+
             navPageOpeningAnimation()
 
 
@@ -49,9 +58,18 @@ let menuClickAnimation = () => {
                 rotate: 0,
                 ease: "power2.inOut",
             })
+            gsap.to('nav h1',{
+                fontSize : '2.5rem',
+                y : 0
+            })
+
+            gsap.to('nav .logo',{
+                height : '3rem'
+            })
+
             navPageClosingAnimation()
         }
-    }
+    }   
 
 
     // adding eventlistener click to perform animarion
